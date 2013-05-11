@@ -61,47 +61,6 @@ def _recv_from(conn):
 
 
 
-class Client(MyBase):
-
-    def __init__(self):
-        MyBase.__init__(self, debug=False)
-
-        try:
-            self.conn = sk.create_connection((HOST, PORT))
-        except:
-            self._server_start()
-            self.conn = sk.create_connection((HOST, PORT))
-
-
-    def __del__(self):
-        try:
-            self.conn.shutdown(sk.SHUT_RDWR)
-            self.conn.close()
-        except:
-            pass
-
-
-    def _server_start(self):
-        try:
-            f = op.join(op.dirname(sys.argv[0]), op.basename(__file__))
-            proc = sp.Popen(['python', f])
-            time.sleep(2)
-        except:
-            _disp('failed to run server.')
-            sys.exit(1)
-
-
-    def Query(self, cmd, arg=None):
-        _send_to(self.conn, cmd, arg)
-        ans = _recv_from(self.conn)
-        if ans[0] == cmd:
-            return ans
-        else:
-            return 'error', None
-
-
-
-
 class Server(MyBase):
 
     stop = False
