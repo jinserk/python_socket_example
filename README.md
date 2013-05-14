@@ -10,3 +10,4 @@ If you want to make your own server using this source, just inherit the client a
 then override the Start(), Stop(), Loop(), and HandleRequest() functions in the server.
 
 This source code is distributed under BSD license.
+Copyright (c) 2013, Jinserk Baik All rights reserved.
