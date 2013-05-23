@@ -9,6 +9,8 @@
 #   This source code is distributed under BSD License.
 #   The use of this code implies you agree the license.
 #
+#   Copyright (c) 2013, Jinserk Baik All rights reserved.
+#
 ###########################################################################
 
 
