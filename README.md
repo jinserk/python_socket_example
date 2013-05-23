@@ -9,4 +9,6 @@ I borrowed the EINTR reset concept from the SocketServer in Python stdlib.
 If you want to make your own server using this source, just inherit the client and the server respectively,
 then override the Start(), Stop(), Loop(), and HandleRequest() functions in the server.
 
-This source code is distributed under GPL3.
+This source code is distributed under BSD License.
+The use of this code implies you agree the license.
+

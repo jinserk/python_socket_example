@@ -6,8 +6,8 @@
 #
 #   Jinserk Baik <jinserk.baik@gmail.com>
 #
-#   this source code is distributed under GPL3.
-#   if you clone this, then it means you'll agree the license
+#   This source code is distributed under BSD License.
+#   The use of this code implies you agree the license.
 #
 ###########################################################################
 
